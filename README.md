@@ -1,2 +1,2 @@
 # javascript
-Basic to Advance Concept with Project
+Basic to Advance Concepts with Project
