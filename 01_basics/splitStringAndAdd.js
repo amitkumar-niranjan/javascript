@@ -1,5 +1,5 @@
-let data1 = document.querySelector("h1");
-let data = document.getElementById("#num");
+let data = document.querySelector("h1");
+data = data.textContent
 
-let innerTxt = data1.textContent;
-console.log( typeof data, data, innerTxt);
+// let innerTxt = data1.textContent;
+console.log( typeof data, data)

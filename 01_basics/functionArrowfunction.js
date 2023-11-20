@@ -33,3 +33,12 @@ arr.map((v,i)=>{
     tot=tot+v; 
 })
 console.log(tot);
+
+arr.filter((v,i)=>{
+    let data1 = [];
+    if(v[i] !== 1)
+        data1 = data1.push(v[i]);
+    console.log(data1);
+})
+
+// console.log(data1);
