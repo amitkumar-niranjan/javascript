@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background color change stop and start</title>
+</head>
+<body>
+    <h1>Background color change stop and start</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <script>
+        
+        let hexColor;
+        function colorChangeHandler(){
+            let hex = "#"; //hexcode = 012345ABCDEF
+            hexColor = ((Date.time)*1);
+            hex+= hexColor;
+            console.log(hexColor, hex);
+            hexColor= (Math.floor(Date.now()/100000000));
+            hex+=hexColor;
+            return hex;
+        }
+        
+        let start = document.querySelector("#start");
+        let startHandler = ()=>{
+            console.log("start clicked");
+            setInterval(colorChangeHandler, 1000);
+            // console.log(colorChangeHandler());
+            // console.log(colorChangeHandler);
+            document.body.style.backgroundColor = 'red';
+        }
+        start.addEventListener("click",startHandler);
+        let stopHandler = (e)=>{
+            console.log("stop clicked");
+        }
+        let stop = document.querySelector("#stop");
+        stop.addEventListener("click",stopHandler);
+
+    </script>
+</body>
+</html>
