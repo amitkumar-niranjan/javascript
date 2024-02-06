@@ -1,0 +1,11 @@
+{
+  "folders": [
+	{
+		"name": "javascript",
+		"path": ".."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "traininghtc"
+  }
+}
